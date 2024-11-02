@@ -8,27 +8,11 @@ namespace MyConsoleApp
     {
         static void Main(string[] args)
         {
-            int[] oceny = new int[] {1, 3, 0, 2, 5};
-            int n = oceny.Length;
-            int max = oceny[0];
-            for(int i=0;i<n;i++){
-                if(oceny[i]>max){
-                    max = oceny[i];
-                }
+            int[] tab = new int[] { 1,2,3,4,5,6,7,8,9,12};
+            for(int i=9; i>=0;i--){
+                Console.WriteLine(tab[i]);
             }
-            for(int i = 0; i<n; i++){
-                for(int j=0; j< n -i-1;j++){
-                    if(oceny[j]>oceny[j+1]){
-                        int temp = oceny[j];
-                        oceny[j] = oceny[j+1];
-                        oceny[j+1] = temp;
-                    }
-                }
-            }
-            foreach(int i in oceny){
-                Console.WriteLine(i);
-            }
-            Console.WriteLine("max:"+ max);
+            Console.WriteLine("ok");
         }
     }
 }
